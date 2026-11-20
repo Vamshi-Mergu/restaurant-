@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Reservations | Saffron Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header"><a class="brand" href="index.html"><span class="brand-mark">S</span><span>SAFFRON
+                <small>TABLE & KITCHEN</small></span></a><button class="menu-toggle">☰</button>
+        <nav class="nav"><a href="index.html">Home</a><a href="about.html">Our Story</a><a
+                href="services.html">Services</a><a href="gallery.html">Gallery</a><a class="active"
+                href="contact.html">Contact</a><a class="nav-cta" href="#booking">Book a Table ↗</a></nav>
+    </header>
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="page-hero-content reveal">
+                <p class="eyebrow light">WE'D LOVE TO SEE YOU</p>
+                <h1>Let's get<br><em>together.</em></h1>
+            </div>
+        </section>
+        <section class="section-pad contact-layout">
+            <div class="contact-info reveal">
+                <p class="eyebrow">FIND YOUR WAY HERE</p>
+                <h2>Come on <em>in.</em></h2>
+                <p class="muted">Questions, celebrations or just a craving? Drop us a note or visit us. We'd love to
+                    help.</p>
+                <div class="contact-detail"><span>VISIT</span>
+                    <p>123 Food Street, Your City, India</p>
+                </div>
+                <div class="contact-detail"><span>CALL</span>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="contact-detail"><span>HOURS</span>
+                    <p>Monday – Sunday · 12 PM – 11 PM</p>
+                </div>
+                <div class="contact-detail"><span>EMAIL</span>
+                    <p>hello@saffrontable.example</p>
+                </div>
+            </div>
+            <div class="booking-card reveal" id="booking">
+                <p class="eyebrow">SAVE YOUR SEAT</p>
+                <h2>Book a <em>table.</em></h2>
+                <form id="bookingForm">
+                    <div class="form-row"><label>Your name<input name="name" type="text" placeholder="Full name"
+                                required></label><label>Phone number<input name="phone" type="tel" placeholder="+91 ..."
+                                required pattern="[0-9+ -]{8,15}"></label></div>
+                    <div class="form-row"><label>Date<input name="date" type="date" required></label><label>Time<select
+                                name="time" required>
+                                <option value="">Choose time</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>7:00 PM</option>
+                                <option>8:00 PM</option>
+                                <option>9:00 PM</option>
+                            </select></label></div><label>Guests<select name="guests" required>
+                            <option value="">Number of guests</option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6+ Guests</option>
+                        </select></label><label>Anything we should know? <textarea name="message" rows="3"
+                            placeholder="A special occasion, seating request..."></textarea></label><button
+                        class="btn btn-dark submit-btn" type="submit">Request a reservation <span>↗</span></button>
+                    <p class="form-note">Demo form: reservation details are prepared in your email app.</p>
+                    <div class="form-success" role="status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><a class="brand brand-footer" href="index.html"><span
+                class="brand-mark">S</span><span>SAFFRON <small>TABLE & KITCHEN</small></span></a>
+        <p>Good food, shared generously.</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="about.html">Story</a><a
+                href="services.html">Services</a><a href="gallery.html">Gallery</a></div><small>© 2026 Saffron Table.
+            Demo restaurant website.</small>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
